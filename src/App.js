@@ -9,7 +9,7 @@ function App() {
   const fileUpl = useRef(null);
 
   const handleChange = async (files) => {
-    const firstFile = files[0]; //ben sadece 1 file için örnek yaptım birden fazşa dosya varsa ona göre ayarlanır
+    const firstFile = files; //ben sadece 1 file için örnek yaptım birden fazşa dosya varsa array geliyor files[0] şeklinde index vererk kullanılır
     setFile(firstFile);
     setFileType(firstFile.type)
     fileUpl.name = "Dosya Yüklendi";
