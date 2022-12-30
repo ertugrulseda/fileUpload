@@ -20,6 +20,13 @@ function App() {
     const data = new FormData();
     data.append(fileType, file, file.name);
 
+     // Burası kaydetme apisi çağırılacağı zaman açılacak
+    // const response = await fetch("Dosyayı bir yere kaydedecek apiurl", {
+    //   method: "POST",
+    //   body: data
+    // });
+    // const result = response.json();  //dönen stringfy edilmiş şekildeki sonuç verisini json'a cast ettim
+
   };
   return (
     <div className="App">
